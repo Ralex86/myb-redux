@@ -1,5 +1,5 @@
 import 'whatwg-fetch'
-import api from './../api.js'
+import api from './../../api.js'
 
 function receiveAssets(assets){
     return {
