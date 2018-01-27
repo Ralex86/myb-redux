@@ -1,0 +1,192 @@
+.flipContainer{
+    position: fixed;
+    perspective: 800px;
+    z-index: 10;
+    margin-top: 7em;
+    margin-left: 3em;
+}
+
+
+.btnProfile{
+    display: block;
+    z-index: 10;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    opacity: 0.5;
+    font-size: 1.2em;
+}
+
+.btnEdit{
+    display: block;
+    z-index: 10;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    font-size: 1.5em;
+}
+
+.profileCard{
+    width: 18em;
+    height: 20em;
+    transform-style: preserve-3d;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.profile,
+.edit {
+ -webkit-backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.profile{
+    z-index:100;
+    transform: rotateY(0deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.profileHover{
+    transform: rotateY(40deg);
+}
+
+.edit {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d8d8d8;
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0 2px 4px 0 rgba(84, 92, 95, .25);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d8d8d8;
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0 2px 4px 0 rgba(84, 92, 95, .25);
+    overflow: hidden;
+    /* important to prevent background color child to leaks out */
+    background-color: #fff;
+}
+
+.footer {
+    padding: 2em;
+    font-size: small;
+    color: #8a8a8a
+}
+
+.header{
+    width:100%;
+    height: 13em;
+    background-color: #ff7c3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.picture{
+    display: inline-block;
+    margin-top: 1.5em;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  /*margin-top: -5em;*/
+}
+
+.infos{
+    margin: 0 2em 0.5em;
+    width: calc(100% - 4em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #fff;*/
+}
+
+
+/* mefiance sur le support des childs selector voir caniuse */
+
+.infos div:nth-child(1){
+    /*color: #717171;*/
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #fff
+}
+
+.infos div:nth-child(1) span:first-child {
+    margin-left: 0.5em;
+}
+
+.infos div:nth-child(1) > span{
+    margin-right: 0.5em;
+}
+
+.infos div:nth-child(2){
+    font-size: small;
+    /*line-height: 1em;*/
+    /*color: #8a8a8a*/
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 0.5em;
+}
+
+.infos div:nth-child(3){
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: small;
+    /*color: #8a8a8a*/
+    color: #fff;
+}
+
+.infos div:nth-child(3) > a {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.infos div:nth-child(3) a:first-child::after {
+    content: " ";
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    /* margin-left: -5px; */
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+.infos div:nth-child(3) a:nth-child(2),
+.infos div:nth-child(3) a:nth-child(3) {
+    opacity: 0.5
+}
+
+
+
+.infos div:nth-child(2) > span{
+    margin-right: 0.5em;
+}
+

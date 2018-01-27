@@ -1,0 +1,116 @@
+
+.container{
+    position: absolute;
+    z-index: 1;
+    padding-top: 30em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+    width: calc(100% - 10em);
+    display: flex;
+    flex-direction: column;
+    /*position: absolute;*/
+    /*z-index: 1;*/
+    /*padding-top: 23em; */
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+
+.container ul{
+    padding-top: 2em;
+    /*padding-left: 4em;*/
+    /*padding-bottom: 3em;*/
+    /*padding-right: 4em;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container ul li{
+    width: 20em;
+    margin: 1rem;
+    font-size: .75rem;
+    color: #333;
+
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+    border-radius: .5em;
+    background: #fff;
+    overflow: hidden;
+}
+
+.container ul li:hover{
+    box-shadow: 0 4px 6px 0 rgba(84, 92, 95, .25);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.header{
+    display: flex;
+    height: 10em;
+    /*background-color: rgb(200,200,200);*/
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 2em 1em;
+}
+
+.footer > span:first-child{
+    font-weight: 700;
+    color: #717171;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.footer > span:nth-child(2){
+    color: #8a8a8a
+}
+
+.footer > span:nth-child(2){
+}
+
+/* badge */
+.badge{
+    position: relative;
+    background-color: #ff7c3d;
+    border-radius: 2px;
+    color: white;
+    padding: 1px 4px;
+    font-size: 1em;
+    margin-top: -1em;
+    margin-left: 15em;
+    margin-right: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.noRemainingPlaces{
+    opacity: 0.5;
+}
+
+.remainingPlaces{
+    opacity: 1;
+}
+
+.headerList{
+    /*padding-left: 4em;*/
+    /*padding-top: 6em;*/
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,28 @@
+.wrapper {
+    width: 200%;
+    -webkit-transition: margin-left 500ms ease-in-out;
+    -moz-transition: margin-left 500ms ease-in-out;
+    -o-transition: margin-left 500ms ease-in-out;
+    -ms-transition: margin-left 500ms ease-in-out;
+    transition: margin-left 500ms ease-in-out;
+    display: flex;
+}
+
+.eventlist{
+    width: 50%;
+}
+
+.event{
+    width: calc(50% - 10em);
+    padding-top: 30em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+}
+
+.event h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
